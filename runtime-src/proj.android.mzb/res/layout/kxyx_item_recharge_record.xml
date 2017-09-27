@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#eee"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/item_recharge_record_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/item_recharge_record_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_recharge_record_iv_icon"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:text="支付宝充值" />
+
+        <TextView
+            android:id="@+id/item_recharge_record_tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/item_recharge_record_iv_icon"
+            android:text="订单号:"
+            android:textColor="#a6a6a6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_recharge_record_tv_order_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/item_recharge_record_tv_order_num"
+            android:text=" "
+            android:textColor="#a6a6a6"
+            android:textSize="14sp"
+            tools:text="1325464788979" />
+
+        <TextView
+            android:id="@+id/item_recharge_record_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#67c100"
+            android:textSize="18sp"
+            tools:text="+30" />
+
+        <TextView
+            android:id="@+id/item_recharge_record_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textColor="#a6a6a6"
+            android:textSize="14sp"
+            tools:text="2017年3月7号" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d6d6d6" />
+</LinearLayout>

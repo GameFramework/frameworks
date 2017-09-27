@@ -1,0 +1,6 @@
+framework module PTTracker {
+  umbrella header "PTTracker.h"
+
+  export *
+  module * { export * }
+}

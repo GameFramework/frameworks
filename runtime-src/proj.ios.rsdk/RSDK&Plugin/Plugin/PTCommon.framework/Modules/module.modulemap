@@ -1,0 +1,6 @@
+framework module PTCommon {
+  umbrella header "PTCommon.h"
+
+  export *
+  module * { export * }
+}

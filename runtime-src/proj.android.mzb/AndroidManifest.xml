@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ldhy.rxzh.mzb"
+    android:installLocation="auto"
+    android:theme="@android:style/Theme.NoTitleBar"
+    android:versionCode="1"
+    android:versionName="1.0">
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17" />
+    
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+	
+    <application
+    	android:icon="@drawable/icon"
+      	android:label="@string/app_name" >
+      
+      	<activity android:name="com.ldhy.rxzh.mzb.AppActivity"
+	        android:launchMode="singleTask"
+	        android:label="@string/app_name" 
+	        android:configChanges="keyboardHidden|orientation|screenSize"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <intent-filter>
+         	<action android:name="android.intent.action.MAIN" />
+          	<category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+      
+      	<activity
+	      	android:name="com.kxyx.ui.account.RegisterActivity"
+	        android:configChanges="orientation|keyboardHidden|navigation"
+	        android:exported="false"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+	        android:name="com.kxyx.ui.account.LoginActivity"
+	        android:configChanges="orientation|keyboardHidden|navigation"
+	        android:exported="false"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+	        android:name="com.kxyx.ui.account.AutoLoginActivity"
+	        android:configChanges="orientation|keyboardHidden|navigation"
+	        android:exported="false"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+	        android:name="com.kxyx.ui.account.CustomerServiceCenterActivity"
+	        android:configChanges="orientation|keyboardHidden|navigation"
+	        android:exported="false"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+	        android:name="com.kxyx.ui.account.RegisterAgreementActivity"
+	        android:configChanges="orientation|keyboardHidden|navigation"
+	        android:exported="false"
+	        android:screenOrientation="landscape"
+	        android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+            android:name="com.kxyx.ui.pay.GameRechargeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+      	<activity
+            android:name="com.kxyx.ui.pay.InputeRechargeAmountActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.account.ForgetPasswordHaveBindPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.mine.BindPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.mine.MessageListActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.gift.MyGiftBagActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.mine.RechargeRecordActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.mine.UserCenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.mine.ModifyPwdActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.pay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.pay.PayWayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.pay.WechatPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.pay.UnionPayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.kxyx.ui.mine.MessageDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+        <activity
+            android:name="com.kxyx.ui.account.NoticeBindPhoneActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog"/>
+
+        <service android:name="com.kxyx.service.SDKService"/>
+        <!-- 以下为第三方支付SDK Activity&Service配置 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="landscape"/>
+      
+      	<service android:name="com.yunva.im.sdk.lib.service.VioceService"/> 
+    </application>
+</manifest>

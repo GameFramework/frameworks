@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingBottom="30dp"
+              android:background="@drawable/kxyx_shape_bg_corners_main"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dialog_close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/kxyx_close"/>
+
+    <TextView
+        android:id="@+id/dialog_tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/kxyx_nomal_notice"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="18sp"
+        tools:text="请绑定手机便于找回密码"/>
+
+    <Button
+        android:id="@+id/dialog_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/kxyx_checkcode_bg"
+        android:text="确认"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#CCFFFFFF"
+    android:padding="25dp">
+
+    <ListView
+        android:id="@+id/dialog_rsdk_user_listView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"/>
+
+</FrameLayout>

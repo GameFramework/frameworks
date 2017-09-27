@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:background="@drawable/kxyx_circle_bg_float">
+
+    <LinearLayout
+        android:id="@+id/float_ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/kxyx_circle_bg_float"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/float_rl_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kxyx_float_mine" />
+
+            <TextView
+                android:id="@+id/btn1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="我的"
+                android:textColor="#444"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/float_rl_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kxyx_float_recharge" />
+
+            <TextView
+                android:id="@+id/btn2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="充值"
+                android:textColor="#444"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/float_rl_giftbag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kxyx_float_giftbag" />
+
+            <TextView
+                android:id="@+id/btn3_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="礼包"
+                android:textColor="#444"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/float_rl_custom_serve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kxyx_float_custom_service" />
+
+            <TextView
+                android:id="@+id/btn4_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="客服"
+                android:textColor="#444"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/float_iv_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kxyx_float_close" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/float_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/kxyx_float_logo" />
+
+    <TextView
+        android:id="@+id/RemindMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/float_logo"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:onClick="pay"
+                android:text="支付"/>
+
+            <EditText
+                android:id="@+id/edit_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="请输入充值金额"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_goods"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入商品名称"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/edit_goods_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入商品描述"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_game_order_sn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入游戏方订单号"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/edit_game_api_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入支付结果异步通知url"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_game_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入区服名称"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/edit_role_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入角色名"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_ext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入扩展参数"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_report_create_role"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="角色创建上报"/>
+
+            <Button
+                android:id="@+id/btn_report_upgrade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="升级上报"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sdk_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SDK版本"/>
+
+        <Button
+            android:id="@+id/btn_game_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="游戏ID"/>
+
+        <Button
+            android:id="@+id/btn_channel_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="渠道ID"/>
+
+    </LinearLayout>
+</ScrollView>

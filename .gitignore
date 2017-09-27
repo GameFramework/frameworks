@@ -1,0 +1,10 @@
+*.cfg
+*.udf
+*.DS_Store
+*.xcscheme
+*.xcuserstate
+*.xcbkptlist
+*.xcworkspacedata
+*.xcscmblueprint
+xcschememanagement.plist
+libYvImSdk.a

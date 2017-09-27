@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fc5cb953-2953-4968-83b3-39e3ff951754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{037a9a02-b906-4cc5-ad98-304acd4e25ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{2d1d0979-58cd-4ab6-b91c-13650158f1fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\YunVaSDK">
+      <UniqueIdentifier>{cfc902c6-5366-4c71-895a-d61a6dbd75d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IM_SDK">
+      <UniqueIdentifier>{7d1514b1-a458-4f3c-9a32-bc7204c0f45c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IM_SDK\include">
+      <UniqueIdentifier>{53371d71-79ab-42c9-beb6-3789b197691f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\AutoUpdate">
+      <UniqueIdentifier>{e47e1ebe-0c51-4b30-8a30-7cba712c480b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PBC">
+      <UniqueIdentifier>{fa5d5209-97e4-4586-842f-c6ea2af08a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Platform">
+      <UniqueIdentifier>{11fc5014-87e9-4614-b524-961deea14e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Socket">
+      <UniqueIdentifier>{5bfbb387-7ee2-46fe-b9c8-9053fe71046d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SimulatorWin.h" />
+    <ClInclude Include="stdafx.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\CYVSyncQueue.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\yvListern.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\yvpacket_overloaded.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\YVRespondFactory.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\YVTool.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\YunVaSDK\YVTypeDef.h">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IM_SDK\include\IMSDK.h">
+      <Filter>IM_SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IM_SDK\include\YvErrorCode.h">
+      <Filter>IM_SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IM_SDK\include\YVIMCmdDef.h">
+      <Filter>IM_SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\IM_SDK\include\yvpacket_sdk.h">
+      <Filter>IM_SDK\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\AutoUpdate.h">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\InitUpdate.h">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\ManifestEx.h">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AutoUpdate\Md5Ex.h">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\InitSocket.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Socket\ODSocket.h">
+      <Filter>Classes\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\alloc.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\array.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\bootstrap.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\context.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\descriptor.pbc.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\map.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\pattern.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\pbc.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\pbc-lua.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\proto.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\stringpool.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PBC\varint.h">
+      <Filter>Classes\PBC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Platform\InitPlatform.h">
+      <Filter>Classes\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Platform\KPlatformLogin.h">
+      <Filter>Classes\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Platform\VoiceSdk.h">
+      <Filter>Classes\Platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulatorWin.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\YunVaSDK\YVRespondFactory.cpp">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\YunVaSDK\YVTool.cpp">
+      <Filter>Classes\YunVaSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\AutoUpdate.cpp">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\InitUpdate.cpp">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\ManifestEx.cpp">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AutoUpdate\Md5Ex.cpp">
+      <Filter>Classes\AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\InitSocket.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Socket\ODSocket.cpp">
+      <Filter>Classes\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\alloc.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\array.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\bootstrap.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\context.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\decode.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\map.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\pattern.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\pbc-lua.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\proto.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\register.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\rmessage.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\stringpool.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\varint.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PBC\wmessage.c">
+      <Filter>Classes\PBC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Platform\InitPlatform.cpp">
+      <Filter>Classes\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Platform\KPlatformLogin.cpp">
+      <Filter>Classes\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Platform\VoiceSdk.cpp">
+      <Filter>Classes\Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\game.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/kxyx_bg_eee"
+              android:orientation="vertical"
+              android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kxyx_shape_bg_gadient_corners_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/activity_user_iv_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/kxyx_close"/>
+
+
+            <ImageView
+                android:id="@+id/activity_user_iv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/activity_user_iv_red_point"
+                android:layout_toLeftOf="@+id/activity_user_iv_red_point"
+                android:src="@drawable/kxyx_user_message"/>
+
+            <ImageView
+                android:id="@+id/activity_user_iv_red_point"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/kxyx_red_point1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/activity_user_iv_portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/kxyx_portrait"/>
+
+            <TextView
+                android:id="@+id/activity_user_tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_user_iv_portrait"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:text="我是爷爷"/>
+
+            <TextView
+                android:id="@+id/activity_user_tv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_user_iv_portrait"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/activity_user_tv_user_name"
+                android:padding="5dp"
+                android:text="[退出]"
+                android:textColor="#fff"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/activity_user_tv_vouchers_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/kxyx_user_vouchers"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#fa4a57"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/activity_user_tv_platform_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_user_tv_vouchers_value"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/kxyx_user_platform_money"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#CB7F17"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/kxyx_shape_user_tv_bg_gree"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/activity_user_tv_recharge_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:text="充值\n记录"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/activity_user_iv_recharge_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:scaleType="center"
+                android:src="@drawable/kxyx_arrow_right_white"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#e6e6e6"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_user_rl_bind"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/activity_user_iv_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/activity_user_tv_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/activity_user_iv_bind"
+            android:text="绑定手机"
+            android:textColor="#dd000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/activity_user_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/activity_user_tv_bind"
+            android:textColor="#fa4a57"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/activity_user_iv_bind_arrow"
+            android:text=""
+            android:textColor="#b4b4b4"
+            android:textSize="15sp"/>
+
+
+        <ImageView
+            android:id="@+id/activity_user_iv_bind_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kxyx_arrow_icon_grey"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e6e6e6"/>
+
+    <RelativeLayout
+        android:id="@+id/activity_user_rl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#eee"
+        android:paddingLeft="40dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/activity_user_iv_password_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/activity_account_set_tv_password_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/activity_user_iv_password_icon"
+            android:text="修改密码"
+            android:textColor="#dd000000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/activity_user_tv_password_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/activity_user_iv_password_arrow"
+            android:text=""
+            android:textColor="#b4b4b4"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/activity_user_iv_password_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kxyx_arrow_icon_grey"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e6e6e6"/>
+</LinearLayout>
